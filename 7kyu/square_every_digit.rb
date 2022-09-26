@@ -1,0 +1,23 @@
+# Instructions
+
+# Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
+# For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1.
+# Note: The function accepts an integer and returns an integer
+
+
+# My Solution
+
+def square_digits num
+  array = []
+  num.to_s.chars.each do |x|
+    y = x.to_i
+    array << y*y
+  end
+  array.join.to_i
+end
+
+# convert num to a string
+# make array of strings (each string is an integer)
+# iterate throught the array and convert the string into an integer
+# push the squared value of the integer to the empty array established at the start
+# join the array of squared integers - this gives a string so convert it into an integer
