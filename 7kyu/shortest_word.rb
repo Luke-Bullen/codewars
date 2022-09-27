@@ -14,3 +14,7 @@ def find_short(s)
   l = sorted_array[0].length
   return l # l: length of the shortest word
 end
+
+# split the string into an array of strings where each string is a word (eg: ["hello", "my", "name"])
+# sorted this array by length - defaults shortest to longest
+# selected index[0] of this sorted array and returned it's length

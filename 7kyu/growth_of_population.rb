@@ -41,3 +41,12 @@ def nb_year(p0, percent, aug, p)
   end
   return years
 end
+
+
+# initilised a years counter = 0 and the population = stating population
+# created a loop to keep running while the population is less than the target population
+# implemented the population increate equation - needed to convert the percentage to a float as some start as integers and will = 0 as a decimal
+# increment the years counter by 1 each time the new population is calculated
+# make the new population = population
+# loop will run again if the population is less than the target population
+# when the population >= target population, loop will stop and the years counter will be returned, showing hwo many years passed (number of times the loop ran)

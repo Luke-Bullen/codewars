@@ -26,3 +26,12 @@ def maskify(cc)
     "#"*$1.length + $2
   }
 end
+
+
+# Take the input and do a substitution
+# set the string with \A and \z
+# allowed for all charactes before the 4 final - group 1
+# take the last 4 characters - grouo 2
+# take the lenght of group 1 and substite the same number of "#" in their place
+# leave group 2 as it is
+# If less than 4 charcaters, all charcaters are unchanged as group 2 is a set number that fills first
