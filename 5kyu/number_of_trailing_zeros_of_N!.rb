@@ -19,3 +19,20 @@
 
 # My Solution
 
+def zeros(n)
+
+  number_of_zeros = 0
+  power_counter = 0
+  number = n.to_f
+
+  until number < 5 do
+    number = number / 5
+    power_counter += 1
+  end
+
+  i = (1..power_counter)
+  i.each do |x|
+    number_of_zeros += n / (5**x)
+  end
+  return number_of_zeros
+end
