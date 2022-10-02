@@ -32,3 +32,10 @@ end
 # iterate through the order array - for each element, check to see how many times it appears in the new_array
 # if the count is less than the desired max count, then push the element to new_array
 # this will result in new_array having no more than the max occurence of each element
+
+
+# A clever solution seen:
+
+# def zeros(n)
+#   n < 5 ? 0 : (n / 5) + zeros(n / 5)
+# end
