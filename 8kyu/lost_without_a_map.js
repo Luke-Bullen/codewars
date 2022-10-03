@@ -16,3 +16,9 @@ function maps(x){
   }
   return arr;
 }
+
+// Solution using .map
+
+function maps(x){
+  return x.map(n => n * 2);
+}
