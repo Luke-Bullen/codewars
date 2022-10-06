@@ -27,3 +27,9 @@ function accum(s) {
   };
   return string;
 }
+
+// Another clever solution
+
+function accum(s) {
+  return s.split('').map((x, index) => (x.toUpperCase() + x.toLowerCase().repeat(index))).join('-');
+}
